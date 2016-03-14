@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Animation Comparison: CSS/Native JS/jQuery | COMP2105 Motion Graphics for Interaction</title>
+    <title>Project 1 button COMP2105 Motion Graphics for Interaction</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         body {
