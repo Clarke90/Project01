@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project 1 button COMP2105 Motion Graphics for Interaction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        html {
+            background-color: #eee;
+        }
+        
+        #slider {
+            background: lightgrey;
+            width: 200px;
+            height: 100px;
+            border-radius: 20px;
+            -webkit-box-shadow: 0 10px 8px -8px black;
+            -moz-box-shadow: 0 10px 8px -8px black;
+            box-shadow: 0 10px 8px -8px black;
+            border: 3px solid grey;
+        }
+        
+        #slider:hover {
+            transform: scale(1.5);
+        }
+        /*button*/
+        
+        h1 {
+            text-align: center;
+            background-color: grey;
+            color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+            margin: 0;
+            position: relative;
+            left: 0;
+            transition: all 1s;
+        }
+        
+        h2 {
+            margin-left: 40%;
+        }
+        
+        p#on {
+            color: mediumseagreen;
+            margin-top: -71px;
+            z-index: 999;
+            padding-left: 15%;
+        }
+        
+        p#off {
+            margin-top: -71px;
+            color: red;
+            z-index: 999;
+            padding-left: 65%;
+        }
+        /* Add visual style to toggle on/off wth JS */
+        
+        .on {
+            left: 100px;
+            background-color: grey;
+        }
+        
+        .center {
+            margin-top: 50px;
+        }
+    </style>
+    <!-- jQuery - attach script library -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+
+    <script>
+        // jQuery - Set DOM ready
+        $(document).ready(function(){
+            // jQuery - Event handler for onclick
+            $("#slider").click(function(event){
+                // Add/remove CSS class that moves the button
+                $("h1").toggleClass("on");
+ 
+    });
+     });
+    </script>
+</head>
+
+<body>
+
+    <h2>Button!<h2>
+   <br>
+ <div id="slider">
+       
+            <h1></h1>        
+           <p id="on"><i class="fa fa-check fa-2x"></i></p>
+            
+            <p id="off"><i class="fa fa-times fa-2x"></i></p>    
+</div>
+</body>
+</html>
